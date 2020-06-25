@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    width: 90%;
+    background-color: white;
+    /* max-width: 1000px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+video{
+    width: 100%;
+}
+
+.text-video{
+    width: 50%;
+    height: 100%;
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-video h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    font-weight: 900;
+    z-index: 100;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.text-video h2 {
+    font-family: 'Clicker Script', cursive;
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.575);
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CUERPO */
+.arquitectura{
+    padding-bottom: 30px;
+}
+
+
+.arq-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arq-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.arq-ind img{
+    width: 100%;
+    height: 100%;
+}
+
+.arq-ind h3{
+    margin: 10px 0;
+}
+
+.arq-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.der-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.der-images >img {
+    margin: 5px;
+    width: 30%;
+    height: 30%;
+}
+.infor p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.informacion{
+    width: 100%;
+}
+
+.infor p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.derecha{
+    width: 50%;
+    float: right;
+}
+
+.derecha h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.izquierda{
+    width: 50%;
+    float: left;
+}
+
+.izquierda img{
+    width: 100%;
+    height: 100%;
+}
+
+
+ /* boton hacia arriba */
+ .up{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+/* FOOTER */
+footer{
+    background: #414141;
+    padding: 10px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.titulo-final2{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and ( min-width: 901px) {
+    #imgs{
+        display: none;
+    }
+}
+@media screen and ( max-width: 900px) {
+
+    .text-video{
+        width: 60%;
+        height: 60%;
+    }
+    .text-video h1{
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .text-video h2{
+        font-size: 40px;
+    }
+
+    .der-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .der-images >img{
+        display: none;
+    }
+
+    .arq-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .arq-ind{
+        width: 70%;
+        text-align: center;
+        margin: 30px;
+    }
+    
+    .arq-ind img{
+        width: 100%;
+        height: 100%;
+    }
+    .derecha{
+        width: 100%;
+    }
+    
+    .izquierda{
+        width: 100%;
+    }
+    
+    .izquierda >img{
+        text-align: center;
+    }
+
+    #div11{
+        display: none;
+    }
+
+    #div12{
+        display: none;
+    }
+
+    #imgs{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .text-video h1{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .text-video h2{
+        font-size: 25px;
+    }
+
+    #div10{
+        display: none;
+    }
+
+    #div11{
+        display: none;
+    }
+
+    #div12{
+        display: none;
+    }
+
+}
